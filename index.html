@@ -1,11 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title> Resume </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<link rel="shortcut icon" type="image/x-icon" href="1537420853.ico" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/resume.css">
+	<link rel="stylesheet" href="css/plugins/jquery.fancybox.css">
 </head>
 <body>
-	<h1> Hello World!</h1>
-	
+	<div class="wrapper">
+		<div class="bg"></div>
+		<header class="header js-header">
+			<div class="container">
+				<div class="navbar">
+					<div class="social_bar">
+						<a href="#" class="icon_btn"><i class="icon fab fa-line"></i></a>
+						<a href="#" class="icon_btn"><i class="icon fab fa-facebook-square"></i></a>
+						<a href="#" class="icon_btn"><i class="icon fab fa-twitter-square"></i></a>
+					</div>
+					<div class="nav">
+						<a href="#popup_overlay" class="menu_toggle">
+							<span></span>
+							<span></span>
+							<span></span>	
+						</a>
+						<div id="popup_overlay"class="popup_menu">
+							<div class="container">
+								<div class="u-cf">
+									<a href="#" class="pop_close">
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<ul class="p_menu">
+									<li><a href="#about" class="pop_item">ABOUT</a></li>
+									<li><a href="#skill" class="pop_item">SKILL</a></li>
+									<li><a href="#experience" class="pop_item">EXPRIENCE</a></li>
+									<li><a href="#my_works" class="pop_item">MY WORKS</a></li>
+									<li><a href="#contact" class="pop_item">CONTACT</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="main">
+			<section class="hero" id="about">
+				<div class="container">
+					<div class="content wow bounceInLeft">
+						<h1>Hello,<br> I'am is John.</h1>
+						<a href="#" class="hero_btn">看更多</a>
+					</div>
+					<div class="hero_portrait">
+					</div>
+				</div>
+			</section>
+			<section class="quote bg_lean">
+				<div class="quote_content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 offset-md-3">
+								<div class="quote_icon">
+								<i class="fas fa-quote-right"></i>
+								</div>
+								<p class="quote_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quibusdam, tempore in beatae omnis saepe velit veniam aliquam, perspiciatis enim?</p>
+								<div class="quote_name"><span>Somebody -</span> from Somewhere</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="skill bg_lean_a" id="skill" >
+				<div class="container ">
+					<div class="subtitle wow bounceInUp"><h2>SKILL</h2></div>
+					<div class="skill_group">
+						<div class="row">
+							<div class="col-md-6  u-mb-24">
+								<div class="skill_card wow bounceInUp">
+									<div class="skill_block">
+										<h3>HTML</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quisquam sequi, omnis pariatur sapiente magnam delectus velit expedita quo deleniti.</p>
+									</div>
+									<div class="skill_icon">
+										<img src="img/html-icon.png" alt="" class="skill_icon_img">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6  u-mb-24">
+								<div class="skill_card wow bounceInUp">
+									<div class="skill_block">
+										<h3>CSS</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quisquam sequi, omnis pariatur sapiente magnam delectus velit expedita quo deleniti.</p>
+									</div>
+									<div class="skill_icon">
+										<img src="img/css-icon.png" alt="" class="skill_icon_img">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6  u-mb-24">
+								<div class="skill_card wow bounceInUp" >
+									<div class="skill_block">
+										<h3>Sketch</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quisquam sequi, omnis pariatur sapiente magnam delectus velit expedita quo deleniti.</p>
+									</div>
+									<div class="skill_icon">
+										<img src="img/sketch-icon.png" alt="" class="skill_icon_img">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6  u-mb-24">
+								<div class="skill_card wow bounceInUp">
+									<div class="skill_block">
+										<h3>Illustrator</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quisquam sequi, omnis pariatur sapiente magnam delectus velit expedita quo deleniti.</p>
+									</div>
+									<div class="skill_icon">
+										<img src="img/ai-icon.png" alt="" class="skill_icon_img">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="experiment " id="experience">
+				<div class="container ">
+					<div class="subtitle wow bounceInUp" ><h2>EXPERIENCE</h2></div>
+					<div class="timeline_group">
+						<div class="timeline"></div>
+						<div class="timeline_row">
+							<div class="timeline_card wow bounceInUp">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at quod molestiae, iusto cupiditate hic asperiores totam sed similique perferendis.</p>
+							</div>
+						</div>
+						<div class="timeline_row">
+							<div class="timeline_card wow bounceInUp">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at quod molestiae, iusto cupiditate hic asperiores totam sed similique perferendis.</p>
+							</div>
+						</div>
+						<div class="timeline_row">
+							<div class="timeline_card wow bounceInUp">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at quod molestiae, iusto cupiditate hic asperiores totam sed similique perferendis.</p>
+							</div>
+						</div>
+						<div class="timeline_row">
+							<div class="timeline_card wow bounceInUp">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at quod molestiae, iusto cupiditate hic asperiores totam sed similique perferendis.</p>
+							</div>
+						</div>
+						<div class="timeline_row">
+							<div class="timeline_card wow bounceInUp">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at quod molestiae, iusto cupiditate hic asperiores totam sed similique perferendis.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="work bg_lean bg_lean_b" id="my_works">
+				<div class="container ">
+					<div class="subtitle wow fadeInUp"><h2>MY WORKS</h2></div>
+					<div class="worklist">
+						<div class="a_work wow fadeInUp">
+							<div class="row">
+							<div class="col-md-6 ">
+								<a data-fancybox="gallery" href="img/1.jpg">
+								<div class="imgbox">
+									<div class="imgbox_inner">
+										<div class="img" style="background-image: url(img/1.jpg)"></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="col-md-6 work_content">
+								<h3> See See Sea</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laboriosam molestias optio obcaecati soluta, labore dignissimos sequi facere fugit harum.</p>
+								<div class="work_btn"> Show Project</div>
+							</div>	
+							</div>
+						</div>
+						<div class="a_work wow fadeInUp">
+							<div class="row">
+							<div class="col-md-6 ">
+								<a data-fancybox="gallery" href="img/2.jpg">
+								<div class="imgbox">
+									<div class="imgbox_inner">
+										<div class="img" style="background-image: url(img/2.jpg)"></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="col-md-6 work_content">
+								<h3> See See Tree</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laboriosam molestias optio obcaecati soluta, labore dignissimos sequi facere fugit harum.</p>
+								<div class="work_btn"> Show Project</div>
+							</div>	
+							</div>
+						</div>
+						<div class="a_work wow fadeInUp">
+							<div class="row">
+							<div class="col-md-6 " >
+								<a data-fancybox="gallery" href="img/3.jpg">
+								<div class="imgbox">
+									<div class="imgbox_inner">
+										<div class="img" style="background-image: url(img/3.jpg)"></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="col-md-6 work_content">
+								<h3> See See SunShine</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laboriosam molestias optio obcaecati soluta, labore dignissimos sequi facere fugit harum.</p>
+								<div class="work_btn"> Show Project</div>
+							</div>	
+							</div>
+						</div>
+						<div class="a_work wow fadeInUp">
+							<div class="row">
+							<div class="col-md-6 " >
+								<a data-fancybox="gallery" href="img/4.jpg">
+								<div class="imgbox">
+									<div class="imgbox_inner">
+										<div class="img" style="background-image: url(img/4.jpg)"></div>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="col-md-6 work_content">
+								<h3> See See Sky</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laboriosam molestias optio obcaecati soluta, labore dignissimos sequi facere fugit harum.</p>
+								<div class="work_btn"> Show Project</div>
+							</div>	
+							</div>
+						</div>
+					</div>
+					<div class="morework_btn wow fadeInUp">More Works</div>
+				</div>
+			</section>
+			<section class="contact " id="contact">
+				<div class="container">
+					<div class="subtitle wow bounceInUp"><h2>CONTACT</h2></div>
+					<form action="" class="form wow bounceInUp" >
+						<label for="name">Name</label>
+						<input id ="name"type="text">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="tel">Telephone</label>
+								<input id ="tel"type="tel">
+							</div>
+							<div class="col-md-6">
+								<label for="email">E-mail</label>
+								<input id ="email"type="email">
+							</div>
+						</div>
+						<label for="content">Content</label>
+						<textarea name="content" id="" cols="30" rows="10"></textarea>
+						<input type="submit" class="morework_btn submit_btn" value ="Send">
+					</form>
+					<div class="divided_text wow bounceInUp">or</div>
+					<div class="info wow bounceInUp">
+						<div class="info_email">
+							<a href="mailTo:asdaas@gmail.com">asdaas@gmail.com</a>
+						</div>
+						<div class="info_phone">
+							<a href="tel:0000000000">0900001122</a>
+						</div>
+						<div class="info_socialbar">
+							<a href="#"><i class="fab fa-facebook wow bounceInUp" data-wow-delay="0.2s"></i></a>
+							<a href="#"><i class="fab fa-instagram wow bounceInUp" data-wow-delay="0.4s"></i></a>
+							<a href="#"><i class="fab fa-tumblr-square wow bounceInUp" data-wow-delay="0.6s"></i></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<footer>
+			<div class="footer wow bounceInUp">
+				<div class="container">
+					<div class="footer_content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint provident at aspernatur unde, sit ducimus maxime atque. Blanditiis eius voluptatem quo, odio reprehenderit eum dolorum ipsam adipisci quod excepturi ipsum, delectus aspernatur tempore beatae doloribus inventore consectetur cum. Beatae distinctio in eius consequuntur, quisquam dignissimos fuga ab. Ipsam, veniam, impedit!</p>
+					</div>
+				</div>
+			</div>
+		</footer>	
+		
+	</div>
+	<script src="js/jQuery.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/plugins/jquery.fancybox.min.js"></script>
+<!-- 	<script src="js/jquery.stellar.js"></script> -->
+	<script src="js/resume.js"></script>
 </body>
 </html>

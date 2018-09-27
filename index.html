@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>kinokuri_for_chinka</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div id="container">
+  <div class="nav" id="nav">
+    <div class="upBar"></div>
+    <div class="bottomBar"></div>
+    <div class="logo"> </div>
+    <div class="menu">
+      <ul>
+        <li class="btn" v-on:click="pages('A')">栗栗在木</li><br/>
+        <li class="btn" v-on:click="pages('B')">創辦人</li><br/>
+        <li class="btn" v-on:click="pages('C')">技術文</li><br/>
+        <li class="btn" v-on:click="pages('D')">作品集</li><br/>
+        <li class="btn" v-on:click="pages('E')">徒步環島</li><br/>
+        <li class="btn" v-on:click="pages('F')">聯絡我們</li>
+      </ul>
+    </div>
+    <div class="copyright"> 
+      <h6>© 2018 Kinokuri. All rights reserved.</h6>
+    </div>
+  </div>
+  <div id="main" v-if="page=='A'">
+    <div class="logo"></div>
+    <div class="whiteBar">
+      <div class="titles">
+        <div class="main_tilte"> 
+          <h2>栗栗在木工作室</h2>
+        </div>
+        <div class="subtitle">
+          <h4>小小的工作室</h4>
+          <h4>大大的可能性</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="author" v-if="page=='B'">
+    <div class="title">
+      <h3>櫻太郎</h3>
+    </div>
+    <div class="pic"></div>
+    <div class="intro">
+      <p>我是偽前端工程師一枚的櫻太郎，這個栗栗在木工作室是八月底左右開始做的平台。原本是希望能做一個部落格，放點自己的東西，寫點自己的日誌之類的，好不容易終於有暑假可以弄，結果做一做便跳進了前端工程的池子裡，現在朝著鑽研出更好的網站前進中。</p><br/>
+      <p>For 輕卡：雖然我自己剛開始學沒很久，但還是希望可以透過在貴平台幫忙的經驗，提升自己也幫助你們，基本的 HTML、CSS的操作都沒有問題。倒是 React JS 完全沒用過，現在導覽列那邊是用 Vue 去實作的，所以這部分可能要多擔待。</p><br/>
+      <p>另外之前在觀察你們的官網時發現你們網頁裡右邊的漢堡選單的地方是跳錯的，要把 parallax-nav 裡面 a 的 href 改到正確的位置(估計只是位子輸入錯而已)。</p>
+    </div>
+  </div>
+  <div id="tech_list" v-if="page=='C'">
+    <div class="title">
+      <h3>技術文</h3>
+    </div>
+    <div class="order_new_old">
+      <div class="nbtn">由新到舊</div>
+      <p>/</p>
+      <div class="obtn">由舊到新</div>
+    </div>
+    <div class="search">
+      <h5>搜尋：</h5>
+      <input placeholder="請輸入要查詢的關鍵字"/>
+    </div>
+    <div class="art_list">
+      <ul>
+        <li class="title_bar">第一篇</li>
+        <li class="title_bar">第二篇</li>
+        <li class="title_bar">第三篇</li>
+        <li class="title_bar">第四篇</li>
+        <li class="title_bar">第五篇</li>
+        <li class="title_bar">第六篇</li>
+      </ul>
+    </div>
+  </div>
+  <div id="works" v-if="page=='D'">
+    <div class="title">
+      <h3>作品集</h3>
+    </div>
+    <div class="wrong_brown"></div>
+    <div class="classes">
+      <div class="classbox">
+        <div class="pic"> </div>
+        <div class="name">Bootstrap 實作</div>
+      </div>
+      <div class="classbox">
+        <div class="pic"> </div>
+        <div class="name">Bootstrap 實作</div>
+      </div>
+      <div class="classbox">
+        <div class="pic"> </div>
+        <div class="name">Bootstrap 實作</div>
+      </div>
+      <div class="classbox">
+        <div class="pic"> </div>
+        <div class="name">Bootstrap 實作</div>
+      </div>
+      <div class="classbox">
+        <div class="pic"> </div>
+        <div class="name">Bootstrap 實作</div>
+      </div>
+    </div>
+  </div>
+  <div id="goTaiwan" v-if="page=='E'">
+    <div class="title">
+      <h3>徒步環島</h3>
+    </div>
+    <div class="order_new_old">
+      <div class="nbtn">由新到舊</div>
+      <p>/</p>
+      <div class="obtn">由舊到新</div>
+    </div>
+    <div class="search">
+      <h5>搜尋：</h5>
+      <input placeholder="請輸入要查詢的關鍵字"/>
+    </div>
+    <div class="art_list">
+      <ul>
+        <li class="title_bar">第一篇</li>
+        <li class="title_bar">第二篇</li>
+        <li class="title_bar">第三篇</li>
+        <li class="title_bar">第四篇</li>
+        <li class="title_bar">第五篇</li>
+        <li class="title_bar">第六篇</li>
+      </ul>
+    </div>
+  </div>
+  <div id="Contact" v-if="page=='F'">
+    <div class="title">
+      <h3>聯絡我們</h3>
+    </div>
+    <div class="letter">
+      <div class="name">
+        <h5>名字：</h5>
+        <input class="input_name"/>
+      </div>
+      <div class="address">
+        <h5>信箱：</h5>
+        <input class="input_name"/>
+      </div>
+      <div class="subject">
+        <h5>主旨：</h5>
+        <input class="input_subject"/>
+      </div>
+      <div class="content">
+        <h5>內容：</h5>
+        <textarea placeholrder="請輸入..." rows="6" cols="60"></textarea>
+      </div>
+    </div>
+    <div class="send">寄出</div>
+    <div class="logo"></div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+//--------colors----------
+$color_pink_brown: #F9E6C5
+$color_white: #F3F2F2
+$color_brown: #AA6630
+$color_darker_brown: #AA530E
+$color_lighter_brown: #DF8931
+$color_black: #333
+//--------RWD------------
+@media screen and (max-width: 1600px)
+  *
+    font-size: 16px
+@media screen and (max-width: 1200px)
+  *
+    font-size: 14px
+@media screen and (max-width: 1000px)
+  *
+    font-size: 12px
+@media screen and (max-width: 768px)
+  *
+    font-size: 10px
+  
+//--------mixin-----------
+@mixin size($w,$h)
+  height: $h
+  width: $w
+@mixin center
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+@mixin hor_center
+  margin-left: auto
+  margin-right: auto
+@mixin position_center($t,$l)
+  top: $t
+  left: $l
+  transform: translate(-50%, -50%)
+//---------all------------
+*
+  font-family: 微軟正黑體
+  // border: 1px solid #000
+  position: relative
+  box-sizing: border-box
+html,body
+  margin: 0px
+  padding: 0px
+  background-color: $color_pink_brown
+//---------nav------------
+.nav
+  +size(22vw,100vh)
+  position: fixed
+  background-color: $color_brown
+  z-index: 5
+  letter-spacing: 1px
+  .upBar
+    width: 100%
+    height: 9vw
+    position: absolute
+    z-index: 10
+    background-image: url("https://4.share.photo.xuite.net/weii_2017/14c9528/20371691/1195828285_x.jpg")
+    background-size: cover
+    top: 0
+    
+  .bottomBar
+    width: 100%
+    height: 9vw
+    position: absolute
+    z-index: 4
+    background-image: url("https://4.share.photo.xuite.net/weii_2017/14c95a4/20371691/1195826361_x.jpg")
+    background-size: cover
+    bottom: 0
+  .logo
+    +size(15vw,15vw)
+    +hor_center
+    border-radius: 50%
+    top: 10%
+    background-image: url("https://4.share.photo.xuite.net/weii_2017/14c95cc/20371691/1195758305_x.jpg")
+    background-position: center
+    background-size: cover
+  .menu
+    +size(100%,50%)
+    top: 15%
+    background-color: $color_brown
+    ul
+      list-style: none
+      padding: 0
+      background-color: $color_brown
+      color: $color_white
+    .btn
+      left: 50%
+      transform: translateX(-50%)
+      border-radius: 2px
+      font-size: 1.5rem
+      display: inline-block
+      padding: 0.5rem 1.5rem
+      cursor: pointer
+      margin-bottom: 1rem
+      background-color: $color_brown
+      transition: 0.3s
+      font-weight: 500
+      z-index: 5
+      &:hover
+        background-color: $color_white
+        color: $color_brown
+    .click_btn
+      left: 50%
+      transform: translateX(-50%)
+      text-align: center
+      font-size: 1.5rem
+      display: inline-block
+      padding: 0.5rem 1.5rem
+      width: 101%
+      margin-bottom: 1rem
+      background-color: $color_pink_brown
+      transition: 0.3s
+      font-weight: 500
+      color: $color_brown
+  .copyright
+    position: absolute
+    bottom: 0
+    color: $color_white
+    z-index: 5
+    h6
+      margin: 0
+//------------main------------
+#main
+  +size(100%,100vh)
+  position: relative
+  background-image: url("https://4.share.photo.xuite.net/weii_2017/14c955a/20371691/1195759983_x.jpg")
+  background-size: cover
+  .logo
+    +size(30vh,30vh)
+    top: 50%
+    left: 61%
+    transform: translate(-50%, -75%)
+    display: inline-block
+    position: absolute
+    border-radius: 50%
+    background-image: url("https://4.share.photo.xuite.net/weii_2017/14c95cc/20371691/1195758305_x.jpg")
+    background-position: center
+    background-size: cover
+  .whiteBar
+    +size(100%,23%)
+    background-color: $color_white
+    opacity: 0.5
+    position: absolute
+    top: 62%
+    .titles
+      display: inline-block
+      position: absolute
+      background-color: transparent
+      left: 61%
+      top: 50%
+      transform: translate(-50%,-50%)
+      color: $color_darker_brown
+      z-index: 10
+      h2,h4
+        padding: 0px
+        margin: 0px
+        font-weight: 300
+        text-align: center
+        background-color: transparent
+        opacity: 1
+      h2
+        font-size: 2.5rem
+        margin-bottom: 0.5rem
+      h4
+        font-size: 1.5rem
+    
+//---------author------------
+#author
+  +size(100%,100vh)
+  background-color: $color_pink_brown
+  .title
+    padding: 0.5vw 1vw
+    display: inline-block
+    border-left: 3px solid $color_darker_brown
+    position: absolute
+    left: 31vw
+    top: 11vh
+    h3
+      padding: 0
+      margin: 0
+      font-size: 2rem
+      color: $color_black
+  .pic
+    +size(45vw,44vh)
+    position: absolute
+    left: 31vw
+    top: 22vh
+    background-image: url("https://scontent.ftpe4-2.fna.fbcdn.net/v/t1.0-9/37687035_1727140300655087_1899995348798013440_n.jpg?_nc_cat=0&oh=e009b76ad69cc78d8716680c8ff96711&oe=5C03A03A")
+    background-position: center top
+    background-size: cover
+  .intro
+    width: 45vw
+    position: absolute
+    left: 31vw
+    top: 70vh
+    color: $color_black
+    margin-bottom: 10vh
+    p
+      padding: 0
+      margin: 0
+      font-size: 1.5rem
+@media screen and (min-width: 1400px)
+  #author
+    .pic
+      width: 630px
+//---------tech_list------------
+#tech_list,#goTaiwan
+  +size(100%,100vh)
+  z-index: 0
+  background-color: $color_pink_brown
+  .title
+    padding: 0.5vw 1vw
+    display: inline-block
+    border-left: 3px solid $color_darker_brown
+    position: absolute
+    left: 31vw
+    top: 11vh
+    color: $color_black
+    h3
+      padding: 0
+      margin: 0
+      font-size: 2rem
+  .order_new_old
+    display: inline-block
+    position: absolute
+    top: calc(30% - 4rem)
+    left: 31vw
+    color: $color_black
+    .nbtn,.obtn
+      font-size: 1rem
+      display: inline-block
+      padding: 0px
+      margin: 0px
+      cursor: pointer
+      transition: 0.2s
+    p
+      font-size: 1rem
+      display: inline-block
+      padding: 0px
+      margin: 0px
+    .nbtn
+        &:hover
+          color: $color_brown
+    .obtn
+        &:hover
+          color: $color_brown 
+  .search
+    position: absolute
+    top: calc(30% - 2rem)
+    left: 31vw
+    text-align: center
+    h5,input
+      display: inline-block
+      margin: 0
+      font-size: 1.2rem
+    input
+      border: none
+      outline: none
+      border-radius: 2px
+      line-height: 1.2rem
+      padding: 0.3rem 1rem 
+      background-color: $color_white
+  .art_list
+    position: absolute
+    top: 33vh
+    left: 31vw
+    padding: 0
+    ul
+      padding: 0
+      margin: 0
+    li
+      list-style: none
+    .title_bar
+      +size(45vw,9vh)
+      margin-bottom: 10px
+      border-radius: 2px
+      background-color: lighten($color_white,10)
+      opacity: 0.7
+      cursor: pointer
+      transition: 0.2s
+      &:hover
+        opacity: 1
+        background-color: lighten($color_white,20)
+//---------works-------
+#works
+  +size(100%,100vh)
+  .title
+    padding: 0.5vw 1vw
+    display: inline-block
+    border-left: 3px solid $color_darker_brown
+    position: absolute
+    left: 31vw
+    top: 11vh
+    color: $color_black
+    h3
+      padding: 0
+      margin: 0
+      font-size: 2rem
+  .wrong_brown
+    +size(22vw,100vh)
+    background-color: $color_brown
+  .classes
+    width: 67vw
+    top: 25vh
+    left: 27vw
+    margin: 0
+    display: inline-block
+    position: absolute
+    margin-bottom: 10vh
+  .classbox
+    +size(20vw,40vh)
+    display: inline-block
+    border-radius: 2px
+    cursor: pointer
+    margin: 0vw 1vw
+    border: 3px solid darken($color_white,10)
+    margin-bottom: 1rem
+    .pic
+      +size(19.4vw,calc(40vh - 20px - 1.5rem))
+      background-image: url("https://4.share.photo.xuite.net/weii_2017/14c95cc/20371691/1195758305_x.jpg")
+      background-position: center
+      background-size: cover
+      border-radius: 2px 2px 0px 0px 
+      opacity: 1
+      transition: 0.7s
+    .name
+      padding: 0.8rem 0.8rem
+      width: 19.6vw
+      font-size: 1.5rem
+      position: absolute
+      height: 3.1rem
+      bottom: 0
+      color: $color_black
+      border-radius: 0px 0px 2px 2px 
+      background-color: rgba($color_white,0.7)
+      transition: 0.7s
+    &:hover
+      .name
+        padding-top: 25px
+        padding-left: 1rem
+        width: 19.6vw
+        height: 39.4vh
+        font-size: 1.5rem
+        position: absolute
+        border-radius: 0px 0px 2px 2px 
+        background-color: rgba($color_white,0.4)
+      .pic
+        opacity: 0.7
+  //---------goTaiwan-------
+  //---------Contact-------   
+#Contact
+  background-color: $color_pink_brown
+  +size(100%,100vh)
+  z-index: 0
+  .title
+    padding: 0.5vw 1vw
+    display: inline-block
+    border-left: 3px solid $color_darker_brown
+    position: absolute
+    left: 31vw
+    top: 11vh
+    color: $color_black
+    h3
+      padding: 0
+      margin: 0
+      font-size: 2rem
+  .letter
+    position: absolute
+    left: 31vw
+    top: 24vh
+    padding: 3vw
+    background-color: lighten($color_pink_brown,7)
+    border-radius: 2px
+    .name,.address,.subject,.content
+      background-color: transparent
+    h5,input
+      margin: 0
+    h5
+      margin-bottom: 0.5rem
+      font-size: 1.2rem
+      font-weight: 400
+      background-color: transparent
+    input,textarea
+      margin-bottom: 1rem
+      border-radius: 1px
+      border: none
+      outline: none
+      border-bottom: 1px solid rgba($color_brown,0.3)
+      background-color: transparent
+  .send
+    position: absolute
+    border: 1px solid $color_brown
+    padding: 0.5vw 1.5vw
+    font-size: 1.5rem
+    right: 23vw
+    top: 90vh
+    cursor: pointer
+    transition-duration: 0.3s
+    border-radius: 2px
+    &:hover
+      background-color: rgba($color_white,0.8)

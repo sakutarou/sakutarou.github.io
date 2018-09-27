@@ -1,0 +1,121 @@
+#container
+  .nav#nav
+      .upBar
+      .bottomBar
+      .logo 
+      .menu
+        ul
+          li.btn(v-on:click = "pages('A')") 栗栗在木
+          br
+          li.btn(v-on:click = "pages('B')") 創辦人
+          br
+          li.btn(v-on:click = "pages('C')") 技術文
+          br
+          li.btn(v-on:click = "pages('D')") 作品集
+          br
+          li.btn(v-on:click = "pages('E')") 徒步環島
+          br
+          li.btn(v-on:click = "pages('F')") 聯絡我們
+      .copyright 
+        h6 © 2018 Kinokuri. All rights reserved.
+  //------------------main----------------------
+  #main(v-if = "page=='A'")
+    .logo
+    .whiteBar
+      .titles
+        .main_tilte 
+          h2 栗栗在木工作室
+        .subtitle
+          h4 小小的工作室
+          h4 大大的可能性
+  //-----------------------author-------------
+  #author(v-if = "page=='B'")
+    .title
+      h3 櫻太郎
+    .pic
+    .intro
+      p 我是偽前端工程師一枚的櫻太郎，這個栗栗在木工作室是八月底左右開始做的平台。原本是希望能做一個部落格，放點自己的東西，寫點自己的日誌之類的，好不容易終於有暑假可以弄，結果做一做便跳進了前端工程的池子裡，現在朝著鑽研出更好的網站前進中。
+      br
+      p For 輕卡：雖然我自己剛開始學沒很久，但還是希望可以透過在貴平台幫忙的經驗，提升自己也幫助你們，基本的 HTML、CSS的操作都沒有問題。倒是 React JS 完全沒用過，現在導覽列那邊是用 Vue 去實作的，所以這部分可能要多擔待。
+      br
+      p 另外之前在觀察你們的官網時發現你們網頁裡右邊的漢堡選單的地方是跳錯的，要把 parallax-nav 裡面 a 的 href 改到正確的位置(估計只是位子輸入錯而已)。
+  //-----------------------tech_list------------   
+  #tech_list(v-if = "page=='C'")
+    .title
+      h3 技術文
+    .order_new_old
+      .nbtn 由新到舊
+      p /
+      .obtn 由舊到新
+    .search
+      h5 搜尋：
+      input(placeholder="請輸入要查詢的關鍵字")
+    .art_list
+      ul
+        li.title_bar 第一篇
+        li.title_bar 第二篇
+        li.title_bar 第三篇
+        li.title_bar 第四篇
+        li.title_bar 第五篇
+        li.title_bar 第六篇
+  //-----------------------works------------         
+  #works(v-if = "page=='D'")
+    .title
+      h3 作品集
+    .wrong_brown
+    .classes
+      .classbox
+        .pic 
+        .name Bootstrap 實作
+      .classbox
+        .pic 
+        .name Bootstrap 實作
+      .classbox
+        .pic 
+        .name Bootstrap 實作
+      .classbox
+        .pic 
+        .name Bootstrap 實作
+      .classbox
+        .pic 
+        .name Bootstrap 實作
+  //-----------------------goTaiwan------------
+  #goTaiwan(v-if = "page=='E'")
+    .title
+      h3 徒步環島
+    .order_new_old
+      .nbtn 由新到舊
+      p /
+      .obtn 由舊到新
+    .search
+      h5 搜尋：
+      input(placeholder="請輸入要查詢的關鍵字")
+    .art_list
+      ul
+        li.title_bar 第一篇
+        li.title_bar 第二篇
+        li.title_bar 第三篇
+        li.title_bar 第四篇
+        li.title_bar 第五篇
+        li.title_bar 第六篇
+  //-----------------------Contact------------
+  #Contact(v-if = "page=='F'")
+    .title
+      h3 聯絡我們
+    .letter
+      .name
+        h5 名字：
+        input.input_name
+      .address
+        h5 信箱：
+        input.input_name
+      .subject
+        h5 主旨：
+        input.input_subject
+      .content
+        h5 內容：
+        textarea(placeholrder="請輸入..." ,rows="6",cols="60")
+    .send 寄出
+    .logo
+
+  
